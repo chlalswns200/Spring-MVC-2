@@ -172,7 +172,7 @@ public class ValidationItemControllerV2 {
 
         if (item.getPrice() != null && item.getQuantity() != null) {
             int resultPrice = item.getPrice() * item.getQuantity();
-            if (resultPrice < 10000) {
+            if (resultPrice < 10000)  {
                 bindingResult.reject("totalPriceMin", new Object[]{10000, resultPrice}, null);
             }
         }
