@@ -62,6 +62,7 @@ public class ValidationItemControllerV3 {
         redirectAttributes.addAttribute("itemId", savedItem.getId());
         redirectAttributes.addAttribute("status", true);
         return "redirect:/validation/v3/items/{itemId}";
+
     }
 
 
